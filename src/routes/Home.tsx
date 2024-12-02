@@ -1,3 +1,4 @@
+import Loading from "../components/Loading";
 import MovieInfo from "../components/MovieInfo";
 import { movieJsonType } from "../types";
 
@@ -11,7 +12,7 @@ export default function Home({
   return (
     <>
       {loading ? (
-        <h1>loading</h1>
+        <Loading />
       ) : (
         myMovie.map((e) => {
           return (

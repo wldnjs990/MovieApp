@@ -20,12 +20,17 @@ export default function App() {
     getMovies();
   }, []);
   return (
-    <Routes>
-      <Route
-        path="/"
-        element={<Home loading={loading} myMovie={myMovie} />}
-      ></Route>
-      <Route path="/Detail/:id" element={<Detail />}></Route>
-    </Routes>
+    <main className="bg-black text-white">
+      <Routes>
+        <Route
+          path="/"
+          element={<Home loading={loading} myMovie={myMovie} />}
+        ></Route>
+        <Route
+          path="/Detail/:id"
+          element={<Detail loading={loading} setLoading={setLoading} />}
+        ></Route>
+      </Routes>
+    </main>
   );
 }
