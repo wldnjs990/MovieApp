@@ -4,7 +4,7 @@ export default function Loading() {
       <img
         src={`${import.meta.env.BASE_URL}public/loading.svg`}
         alt=""
-        className="w-[50px] h-[50px] animate-spin"
+        className="w-[50px] h-[50px] animate-spin z-50"
       />
     </div>
   );
