@@ -56,10 +56,7 @@ export default function Detail({
               history.back();
             }}
           >
-            <img
-              src={`${import.meta.env.BASE_URL}public/arrow.svg`}
-              alt="화살표 아이콘"
-            />
+            <img src="/public/arrow.svg" alt="화살표 아이콘" />
           </span>
           <DetailExplain currentMovie={currentMovie} />
           <DetailPlayBtn onClick={handleFrameToggle} />
